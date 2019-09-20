@@ -1,0 +1,21 @@
+ .title-icon{
+    float: right;
+  }
+  .subNav{
+   padding-left: 10px;
+   background-color: #293846;;
+  }
+  .navContent a .sublist-icon {
+    display: none;
+  }
+  .navContent li{
+    padding-left: 20px;
+  }
+ .subNav .glyphicon-chevron-up:before{
+  content: '';
+  width: 25px;
+  height: 14px;
+  background:url(/images/index-icon/up.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+ }

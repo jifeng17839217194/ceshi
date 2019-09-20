@@ -1,0 +1,142 @@
+/*语音播放器聊天样式*/
+.audio5js .chat {
+	width: 200px;
+	height: 34px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.audio5js .chat span {
+	cursor: pointer;
+	float:left;
+	width: 150px;
+	height: 34px;
+	display: inline-block;
+}
+
+.audio5js .chat .play {
+	background: url("../image/play.gif") no-repeat;
+}
+
+.audio5js .chat .playing {
+	background: url("../image/playing.gif") no-repeat;
+}
+
+.audio5js .chat i {
+	display: inline-block;
+	width: 50px;
+	height: 24px;
+	float: right;
+	font-size: 14px;
+	color: #A7A7A7;
+	padding-top: 10px;
+}
+
+.audio5js .chat i.loading{
+	background: url("../image/audio_loading.gif") 0px 9px no-repeat;
+}
+
+.audio5js .chat i.error{
+	background: url("../image/loadErr.png") -7px 0px no-repeat;
+}
+
+/*语音播放器精简样式*/
+.audio5js .mini {
+	width: 495px; height: 36px; background: #404040;
+	font-family: monospace;
+	font-size: 12px;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444));
+	-webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.audio5js .mini .play-pause {width: 36px; height: 36px; padding: 0px; margin: 0px; float: left; overflow: hidden; border-right: 1px solid #000; }
+.audio5js .mini p { display: none; width: 36px; height: 36px; margin: 0px; cursor: pointer; }
+.audio5js .mini .play {background: url("../image/player-graphics.gif") 3px 3px no-repeat; }
+.audio5js .mini .pause { background: url("../image/player-graphics.gif") 3px -86px no-repeat; }
+.audio5js .mini .loading {display: block; background: url("../image/player-graphics.gif") 3px -26px no-repeat; }
+.audio5js .mini .error { background: url("../image/player-graphics.gif") 3px -57px no-repeat; }
+
+.audio5js .mini .scrubber { position: relative; float: left; width: 280px; background: #5a5a5a; height: 14px; margin: 10px; border-top: 1px solid #3f3f3f; border-left: 0px; border-bottom: 0px; overflow: hidden; }
+.audio5js .mini .progress {
+	position: absolute; top: 0px; left: 0px; height: 14px; width: 0px; background: #ccc; z-index: 1;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ccc), color-stop(0.5, #ddd), color-stop(0.51, #ccc), color-stop(1, #ccc));
+}
+.audio5js .mini .loaded {
+	position: absolute; top: 0px; left: 0px; height: 14px; width: 0px; background: #000;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.5, #333), color-stop(0.51, #222), color-stop(1, #222));
+}
+
+.audio5js .mini .time {
+	float: left; height: 36px; line-height: 36px; width:106px; position: relative;
+	text-align:center;margin: 0px; padding: 0px 6px 0px 8px;
+	border-left: 1px solid #000;border-right: 1px solid #000;
+	color: #ddd; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+.audio5js .mini .time em { padding: 0px 2px 0px 0px; color: #f9f9f9; font-style: normal; }
+.audio5js .mini .time strong { padding: 0px 0px 0px 2px; font-weight: normal; }
+
+.audio5js .mini .error-message {
+	float: left; display: none; margin-left: 46px; height: 36px; width: 280px; overflow: hidden; line-height: 36px; white-space: nowrap; color: #fff;position: absolute;
+	text-overflow: ellipsis; -o-text-overflow: ellipsis; -icab-text-overflow: ellipsis; -khtml-text-overflow: ellipsis; -moz-text-overflow: ellipsis; -webkit-text-overflow: ellipsis;
+}
+
+.audio5js .mini .volume {width: 36px;position: relative; padding: 0px; margin: 0px; background-color: #222; float:left;}
+.audio5js .mini .play-volume {position: absolute;width: 36px; padding: 0px; margin: 0px; float: left;background-color: #222;z-index: 999;}
+.audio5js .mini .play-volume .play-volume-button{position:absolute;width: 36px; height: 36px;}
+.audio5js .mini .play-volume .play-volume-button a{width: 36px; height: 36px;display:block;text-decoration:none;background: url("../image/playVolume.png") -7px -21px no-repeat; }
+.audio5js .mini .play-volume .play-volume-button a.mute{background: url("../image/playVolume.png") -39px -21px no-repeat; }
+.audio5js .mini .play-volume .play-volume-button a:hover,
+.audio5js .mini .play-volume .play-volume-button a:focus{background-color: #222;}
+.audio5js .mini .play-volume .play-volume-adjust{
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	width: 36px;
+	height: 110px;
+	cursor: default;
+	position: absolute;
+	background-color: #222;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0, #444), color-stop(0, #444));
+	-webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	bottom: 0px;
+	z-index: 1000;
+	display: none;
+}
+
+.audio5js .mini .play-volume .play-volume-adjust .curVolume{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	box-shadow:-1px -1px 0 rgba( 0, 0, 0, .5 ), 1px 1px 0 rgba( 255, 255, 255, .1 );
+	width: 14px;
+	height: 100px;
+	background-color: #ccc;
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	z-index: 1002;
+	left:10px;
+}
+
+.audio5js .mini .play-volume .play-volume-adjust .maxVolume{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: linear-gradient( to top, #007fd1, #c600ff );
+	box-shadow: inset 0 0 5px rgba( 255, 255, 255, .5 );
+	width: 14px;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	background: #000;
+	cursor: pointer;
+	z-index: 1001;
+	left: 10px;
+}

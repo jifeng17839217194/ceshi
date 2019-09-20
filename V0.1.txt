@@ -1,0 +1,57 @@
+﻿df -h
+uname -a
+
+fdisk -l 
+fdisk /dev/xvdb
+n  p 1  wq
+
+linux里挂载（mount）和取消挂载（umount）命令的使用
+$ mount /dev/hda2 /datahome
+
+
+centos7 如何卸载yum 安装的php
+
+# yum remove php-common
+
+
+centos7.3安装php5.6版本
+
+yum -y install subversion
+yum -y install vsftpd
+
+netstat -ntlp   //查看当前所有tcp端口·
+
+netstat -ntulp |grep 80   //查看所有80端口使用情况·
+
+netstat -an | grep 3306   //查看所有3306端口使用情况·
+
+查看一台服务器上面哪些服务及端口
+
+netstat  -lanp
+
+查看一个服务有几个端口。比如要查看mysqld
+
+ps -ef |grep mysqld
+
+查看某一端口的连接数量,比如3306端口
+
+netstat -pnt |grep :3306 |wc
+
+查看某一端口的连接客户端IP 比如3306端口
+
+netstat -anp |grep 3306
+
+netstat -an 查看网络端口 
+
+lsof -i :port，使用lsof -i :port就能看见所指定端口运行的程序，同时还有当前连接。 
+
+
+
+CentOS7如何查看是否安装了vsftpd
+---------------------------------------
+
+
+[root@localhost ~]# rpm -qa | grep vsftpd
+
+vsftpd-3.0.2-22.el7.x86_64
+如果显示了vsftpd版本号说明安装了vsftpd

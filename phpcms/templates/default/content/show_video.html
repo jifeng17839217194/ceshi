@@ -1,0 +1,15 @@
+{template "content","header"}
+
+<h1>{$title}<br />
+<span>{$inputtime}&nbsp;&nbsp;&nbsp;来源：{$copyfrom}&nbsp;&nbsp;&nbsp;评论：<a href="#comment_iframe" id="comment">0</a> 点击：</span><span id="hits"></span></h1>
+{if $description}<div class="summary" >{$description}</div>{/if}
+<div class="content">
+	{$content}
+	{php var_dump(getpolyvdetail($bee_video));}
+</div>
+
+<div id="pages" class="text-c">{$pages}</div>
+          
+
+<script language="JavaScript" src="{APP_PATH}api.php?op=count&id={$id}&modelid={$modelid}"></script>
+{template "content","footer"}

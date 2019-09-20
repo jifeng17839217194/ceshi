@@ -1,0 +1,421 @@
+/*初始化部分样式 Muntime.com*/
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,p,blockquote,th,td,span{margin:0;padding:0;font-family:"Microsoft Yahei"; }
+*:focus {outline:none}
+ input{-webkit-appearance}
+html,body{color: #676a6c;}
+body{background:#fff; overflow-x:hidden;font-size: 14px;line-height: 1.5em; }
+ul,li{ list-style:none;}
+a,a:link, a:visited{color: #676a6c; text-decoration:none;}
+a:focus{outline: none;}
+img{ border:none;}
+h1,h2,h3,h4,h5{font-weight:normal;color: #676a6c;}
+table{border-collapse:collapse;}
+input,label,img,th {vertical-align: middle;}
+.maincolor{color:#0080ba;},.maincolor a:link{color:#0080ba;},.maincolor a:visited{color:#0080ba;},.maincolor a:hover{color:#0080ba;}
+.redcolor{color:#fe1d1d;},.maincolor a:link{color:#fe1d1d;},.maincolor a:visited{color:#fe1d1d;},.maincolor a:hover{color:#fe1d1d;}
+.bluecolor{color:#098ac4;},.maincolor a:link{color:#098ac4;},.maincolor a:visited{color:#098ac4;},.maincolor a:hover{color:#098ac4;}
+.greencolor{color:#37c207;},.maincolor a:link{color:#37c207;},.maincolor a:visited{color:#37c207;},.maincolor a:hover{color:#37c207;}
+.greycolor{color:#676a6c;},.maincolor a:link{color:#676a6c;},.maincolor a:visited{color:#676a6c;},.maincolor a:hover{color:#676a6c;}
+.orangecolor{color:#ff731f;},.maincolor a:link{color:#ff731f;},.maincolor a:visited{color:#ff731f;},.maincolor a:hover{color:#ff731f;}
+
+.alert{padding:15px;margin-top:20px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}
+.alert h4{margin-top:0;color:inherit}
+.alert .alert-link{font-weight:bold}
+.alert>p,.alert>ul{margin-bottom:0}
+.alert>p+p{margin-top:5px}
+.alert-dismissable,.alert-dismissible{padding-right:35px}
+.alert-dismissable .close,.alert-dismissible .close{position:relative;top:-2px;right:-21px;color:inherit}
+.alert-success{background-color:#f1f9f7;border-color:#e0f1e9;color:#1d9d74}
+.alert-success hr{border-top-color:#ceeadc}.alert-success .alert-link{color:#157254}
+.alert-info{background-color:#f0f9ff;border-color:#ccf3ff;color:#007dbc}
+.alert-info hr{border-top-color:#b3edff}.alert-info .alert-link{color:#005b89}
+.alert-warning{background-color:#fcf8e3;border-color:#faebcc;color:#8a6d3b}
+.alert-warning hr{border-top-color:#f7e1b5}
+.alert-warning .alert-link{color:#66512c}
+.alert-danger{background-color:#fbeeed;border-color:#f7d8dd;color:#d9534f}
+.alert-danger hr{border-top-color:#f2c3ca}
+.alert-danger .alert-link{color:#c9302c}
+.avatar {
+	width:45px;
+	height:45px;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/* -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .4); */
+}
+
+.defaultimg{
+border-radius: 6px;
+-webkit-border-radius: 9px;
+-moz-border-radius: 9px;
+}
+.message{position:relative;min-height:18px;margin:1em 0;height:auto;background-color:#EFEFEF;padding:1em;line-height:1.33;color:rgba(0,0,0,.6);-webkit-transition:opacity .1s ease,color .1s ease,background .1s ease,-webkit-box-shadow .1s ease;transition:opacity .1s ease,color .1s ease,background .1s ease,box-shadow .1s ease;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border-radius:.325em}
+.message p{opacity:.85;margin:1em 0}
+
+/*模板列表*/
+.temp-list{float:left; width:310px; margin-right:14px;margin-left:15px; padding:5px; margin-bottom:16px}
+.temp-list ul{ overflow:hidden;_float:left;zoom:1}
+.temp-list ul a.img{ float:left;height: 250px;width:300px;border:1px solid #d8d8d8;padding:4px;}
+.temp-list ul a.img:hover{ border:1px solid #f60;padding:4px;background:#f60}
+
+.temp-list ul li{line-height:25px;width:310px;}
+/*以下黄页增加的样式 tab*/
+.tab-but{ border-bottom:1px solid #d8d8d8; padding:0 10px; margin:14px 10px 10px}
+.tab-but a,.tab-but a span{ color:#000000;display:inline-block;zoom:1;*display:inline; height:25px; line-height:100%;background:url(../images/member/tab_bg.png) no-repeat;cursor:hand;}
+.tab-but a{padding-left:14px; margin-right:5px; background-color:#f7fafb; cursor:hand;}
+.tab-but a span{background-position:right top; padding-right:14px; padding-top:8px; height:17px}
+.tab-but a.on{ background-color:#FFF;position:relative;margin-bottom:-1px;*bottom:-1px; height:26px; font-weight:700;color:#003399}
+
+/*定义清除浮动 Muntime.com*/
+.clearfloat:after{ content:'.';display:block;clear: both;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0; }
+.clearfloat{zoom:1;}
+
+/*LOGO修改为通用的后台管理,如需LOGO图片请注释以下三行 Muntime.com*/
+/* .logo a:before,.logo a:after{color: #606672;display: block;position: absolute;top:26px;}
+.logo a:before{content: "\f013"; font-size: 2em;width: 100px;left:10px;}
+.logo a:after{content: "用户中心"; font-size: 14px;width: 100px;left:40px;}
+ */
+/*如需LOGO图片请启用这行,logo尺寸限制为185px 55px Muntime.com*/
+.logo a{background: url(http://www.114nz.com/statics/images/v9/logo.jpg) no-repeat center bottom;}
+
+
+/*定义需要用到图标的字体 Muntime.com*/
+.switchs,.crumbs,.scroll a,.panel-add em,#panellist span a,.logo a,.aui_title,.showMsg h5,.guery,.r-close,.r-open,#help a,.ScreenLock .ico{font-family: 'FontAwesome';}
+
+
+/*整体框架配色修改 Muntime.com*/
+.col-left,.left,.lf{float: left;}
+#headercontent .col-left{background: #f9f9f9;border-right: 1px solid #d8dce5;}
+.col-right,.right,.rt,.fr{float: right;}
+.header{width: 100%;height: 90px;background: #fff;position:relative;}
+.header .logo{float:left;width:136px;height:85px;margin-right:10px;margin-left:30px;position: relative;}
+.logo a{display: block;height:60px;line-height: 60px;margin-top:25px;width: 185px;}
+.invisible {visibility: hidden;}
+.header .log{height: 24px;position: absolute;left: 0px;top: 0px; line-height: 24px; margin-left: 10px; font-size: 14px;}
+.header .log span,.rt-col span,.rt-col .cut_line span{padding: 0px 5px; color: #d8d8d8;}
+.rt-col{height: 35px;background: #ffffff;width: 100%;position: absolute;right: 0px;top: 0px;line-height: 35px;text-align: right;font-size: 14px;padding-right: 10px;}
+.header .log,.header .log a,.rt-col,.rt-col a{color: #606672;}
+
+#top_menu{padding-left:220px;bottom: 0px;height: 40px;line-height: 40px;width: 100%;background: #098ac4;}
+#top_menu li{float: left;}
+#top_menu li a{display: block;width:100px;text-align: center;color: #fff;font-size: 14px;padding:0;}
+#top_menu .on,#top_menu li:hover{background: #0080ba;}
+#top_menu .on a{color: #fff;}
+#headercontent .left_menu{width: 185px;position: relative;display: block;padding: 10px 0px 28px 0px;overflow: hidden;background: #eaedf4;}
+#Scroll {float: left;width: 185px;overflow: hidden;}
+#leftMain .f14{background: #ced4e0;padding: 8px 15px;color: #606672;border-bottom: 1px #e9e9e9 solid;border-top: 1px #e9e9e9 solid;}
+.crumbs{}
+#openClose{display: none;}
+#leftMain ul{padding: 5px 0px}
+#leftMain ul li{padding: 10px 20px;border-bottom: 1px #d8dce5 solid;}
+#leftMain ul li a{color: #606672;font-size:14px;height:40px;}
+.f14 .switchs{display: block;float: right;height: 20x;width: 14px;line-height: 20px;}
+.f14 .switchs:before{content: "\f105";padding:5px;cursor: pointer; }
+#leftMain .f14 .on:before{content: "\f107";}
+#leftMain ul .on a,#leftMain ul li:hover a{}
+.crumbs{height: 40px;line-height: 40px;width:100%;font-size: 14px;left: 0px; }
+.crumbs:before{content: "\f108";}
+.crumbs .shortcut{position: absolute;right: 10px;top: 0px}
+.crumbs .current_pos{padding-left:20px;font-size: 14px;}
+.shortcut a{margin: 0px 5px;font-size: 14px;padding: 2px 8px;}
+.shortcut a:nth-child(3){margin-right: 88px;}
+.col-1{background:#fff;}
+.col-1 .content{position: relative;overflow: hidden;padding: 3px 5px 0px 5px; margin-top: 30px;}
+.scroll{background: #eaedf4;position: absolute;left: 0px;bottom: 0px;width: 125px;height: 22px;overflow: hidden;z-index: 100;padding: 3px 10px;}
+.scroll a{width: 48px;height: 14px;line-height:14px;margin: 0  6px;display: inline-block;color: #fff;background: #0080ba;text-align: center;border-radius: 2px;}
+.scroll .per:before{content: "\f106";}
+.scroll .next:before{content: "\f107";}
+.fav-nav{padding: 0 0 0 12px;position: absolute;left: 0;bottom: 0px;width: 100%;height: 26px;line-height: 26px;border-top:1px solid #dbdbdb;background: #f3f3f3; }
+.fav-nav div{float: left;}
+.panel-add em{font-style:normal;font-size:0;}
+
+#rightMain{background: #fff;}
+.tab_web:hover{background: #0080ba;}
+.tab-web-panel{display: none;padding:5px 12px;border: 1px solid #dbdbdb;margin-left: -5px; }
+.tab-web-panel a{display:block;padding-bottom:5px; }
+.tab_web span{display: block;height: 55px;}
+#top_menu .tab_web a{min-width: 80px;width:auto;padding:0px 5px; }
+
+
+/*面板切换修改 Muntime.com*/
+#btnx{position: absolute;right: 15px;top:84px;z-index: 99;}
+#btnx h6{font-size: 14px;padding: 2px 8px; font-weight: normal;cursor: pointer;}
+#Site_model{display: none;}
+
+/*皮肤配置选项修改 Muntime.com*/
+#Skin{position: absolute;right: 15px;top: 50px;overflow: hidden;z-index: 100;}
+#Skin li{display:block;width: 8px;height: 8px;background: #fff;cursor: pointer;border: 1px solid #fff;border-radius:3px;float: left;margin-left: 2px;}
+#Skin .s1{background: #ced4e0;}
+#Skin .s2{background: #19a97b;}
+#Skin .s3{background: #098ac4;}
+
+
+/*修改正添加内容中的文件树位置 Muntime.com*/
+.cat-menu{width: 180px;margin:0px;border-right: 1px solid #dbdbdb;background: #fff;z-index: 999;}
+#display_center_id .content{margin-top: 25px;margin-left: 10px;}
+.left_menu{z-index:99;}
+#model_import{height: auto;}
+
+/*右下角官方文档提示修改 Muntime.com*/
+#help{position: absolute;right: 30px;top: 0px;}
+#help .panel-delete{margin-left:4px;}
+#help .panel-delete:before{content: "x";font-size: 14px;}
+#help a:before {content: "\f059";font-size: 14px;margin-right: 2px;}
+#help a{margin: 0px 3px;}
+
+/*其它表格内页通用定义 Muntime.com*/
+.mr10{margin-right: 10px;}
+.bk10{height: 10px;}
+.pad-10,.pad_10{padding:10px;overflow: hidden;}
+.bk20 {height: 10px;}
+.bk, .bk3, .bk6, .bk8, .bk10, .bk15, .bk20, .bk30 {clear: both;}
+.hr{border-top:1px dashed #f1f1f1;margin-top: 10px;}
+.hr hr{display: none;}
+.f14 {font-size: 14px;}
+.bk3{height: 3px;}
+.hidden {display: none;}
+.td-line{overflow: hidden;}
+.pad-lr-10{padding:0px 10px; }
+.blue, .blue a{color:#3498db;}
+.title-1{padding:5px 0px;margin-bottom:0px;border-bottom:1px solid #f3f3f3;font-weight: bold;}
+.explain-col{border: 1px solid #ffbe7a;background: #fffced;padding: 8px 10px;}
+.ib, .ib-li li, .ib-a a, .ib-span span, .common-form ul li span.text, .fixed-bottom .fixed-but .button, .arrowhead, .arrowhead-b,.shortcut a, .shortcut a span, .picBut a, .tab-use, .scroll a{display: inline-block;}
+
+/*后台主页信息展示修改 Muntime.com*/
+#main_frameid h6,.col-2 h6{font-size: 14px;padding-bottom:5px;margin-bottom: 5px;border-bottom: 1px solid #dbdbdb }
+.col-2{border: 1px solid #dbdbdb;min-height: 160px;padding:10px; }
+.col-auto{overflow: hidden;}
+fieldset{margin-top: 10px;}
+
+
+/*部分表格属性修改 Muntime.com*/
+body .table_form tbody td,body .table_form tbody th,body .table_form tbody tr{border-bottom:1px solid #f1f1f1; }
+body .table-list tbody td,body .table-list tbody tr,body .table-list .btn{border-bottom:1px solid #f1f1f1;}
+body .table-list thead th{border-bottom:1px solid #f1f1f1;background: #f9f9f9;font-weight:bold;}
+body .y-bg .radio-label tr td{border-bottom:1px solid #e4e2e2;}
+.text-c{text-align: center;}
+.bk15{height: 15px;}
+#upfile tr .y-bg .input-text{height: auto;width: 210px;}
+#upfile tr .y-bg input[name="file"]{width: 220px;}
+
+/*内容页菜单按钮修改 Muntime.com*/
+.subnav{padding:0px 10px }
+.content-menu{ padding:12px 8px;}
+.content-menu a,.tabBut li{margin-left: -8px;padding: 5px 10px;border-radius: 2px;box-shadow: 0px 1px 2px rgba(0,0,0,0.1); background: #3498db;color:#fff;border: 1px solid #3498db;}
+.tabBut li a{color: #fff;}
+.content-menu a em{ font-style: normal;}
+.content-menu .on,.tabBut .on,.content-menu a:hover,.tabBut li:hover{background: #0080ba;color:#fff;border: 1px solid #0080ba;}
+.content-menu .add{color: #fff;border: 1px solid #ff6c60;background: #ff6c60;}
+.tabBut .on a{color: #fff;}
+.tabBut{display: block;border-bottom:1px solid #f1f1f1;width: 100%; overflow: hidden;padding:10px 0px; }
+.tabBut li{float: left;margin-right: 8px;margin-left:0px;}
+.content-menu span{font-size:0;padding-left: 18px;}
+.col-tab{margin-top: -10px;}
+.btn .button,.btn label{cursor: pointer;}
+.btn label,.btn a{display:inline-block;border-radius: 2px;background: #3498db;color:#fff;border: 1px solid #3498db;height:25px;line-height:25px;padding:0px 4px;margin-left: -10px;margin-right: 2px; }
+.font-fixh a{padding:0px;margin: 0px;background:none; border: none;color: #0080ba; }
+body .button{background: #fe6b5f;color: #fff;padding: 2px 8px;border-radius: 2px;border: none;height: 28px;font-size: 14px;}
+.line-x{border-bottom:1px solid #f3f3f3; }
+
+/*弹出窗dialog修改为简单的DIV层 Muntime.com*/
+.aui_c{background: #fff;border-radius:5px 5px 3px 3px;}
+.aui_titleBar{border-radius:3px 3px 0px 0px;height: 36px;background: #ced4e0;line-height: 36px;overflow: hidden;position: relative;}
+.dialog{height: 0;height: 0;font-size: 0;line-height: 0;border: none;}
+.aui_main{padding:5px 10px; }
+.aui_title{color: #606672;font-size: 14px;margin-left: 10px;text-shadow: 0px 1px 2px rgba(0,0,0,0.3);}
+.aui_title:before{content: "\f06a";margin-right: 5px;}
+.aui_titleBar .aui_close{font-size: 1.3em;color: #606672;position: absolute;top: 0px;right: 10px;}
+.aui_footer{text-align: center;}
+.aui_buttons{padding-bottom:20px; }
+.aui_buttons [type="button"]{padding: 3px 16px;margin:0px 8px;border-radius: 2px;box-shadow: 0px 1px 2px rgba(0,0,0,0.1); background: #3498db;color:#fff;border: 1px solid #3498db;}
+.aui_buttons [type="button"]:nth-child(1){border: 1px solid #0080ba;background: #0080ba;}
+.tabBut li{cursor: pointer;}
+
+/*附件上传图标修改 Muntime.com*/
+#div_swf_1,#div_swf_2,#div_swf_3,#div_swf_4{margin-left: -10px;}
+
+
+/*信息提示框修改 Muntime.com*/
+body .showMsg{width:450px; height:200px;position:absolute;top:44%;left:50%;margin:-87px 0 0 -225px;border: 1px solid #ced4e0;border-radius: 4px;height: 200px;box-shadow: 0px 1px 2px rgba(0,0,0,0.1);}
+body .showMsg h5{background-image:none;background: #ced4e0;height: 32px;padding:0px;line-height: 32px;font-size: 14px;color: #606672;text-align: left;}
+body .showMsg h5:before{content: "\f06a";margin:0px 3px 0px 8px;}
+body .showMsg .content{font-size: 14px;margin-top: 65px;}
+body .showMsg .bottom{position: absolute;bottom:0px;left: 0px;text-align: center; width: 100%;height: 26px;line-height: 26px;font-size: 14px;}
+body .showMsg .bottom a{color: #ced4e0;}
+body .showMsg .guery:before{content: "\f071";display:inline-block; font-size: 2em;color:#3498db;position: relative;top:4px;left: -8px;}
+.showMsg .content #cat_search{text-align: center;}
+
+/*登入界面修改 Muntime.com*/
+#canvas{background: #eaedf4;width: 100%;height: 100%;overflow: hidden;}
+.admin_login{width:300px;height:310px;overflow:hidden;padding:40px;background: #fff; box-shadow:0 -15px 30px #ced4e0;border-radius:5px;position: absolute;left:50%;top: 50%;margin-left: -190px;margin-top: -250px;}
+.admin_title{font-size: 20px;font-weight: bold;text-align: center;margin-bottom: 15px;color: #eaedf4}
+.admin_title em{display: block;font-size: 14px;margin-top: 8px;}
+.admin_user,.admin_pwd,.admin_val,.admin_sub{margin: 10px 0;height: 40px;overflow: hidden;clear: both;position: relative;border: 1px solid #dbdbdb;border-radius: 3px; }
+.admin_user:hover,.admin_pwd:hover,.admin_val:hover{border-color:#eaedf4}
+.admin_sub{border: none;}
+.login_txt{font-size: 14px;height: 26px;line-height: 26px;padding: 8px 5%;width: 90%;text-indent: 2em;border: none;color: #676a6c;}
+.login_txt:focus{color: #676a6c; }
+.submit_btn{width: 100%;height: 40px;border: none;font-size: 16px;background: #eaedf4;color: #FFF;}
+.submit_btn:hover{background: #ced4e0;color: #f4f4f4;}
+.admin_info{padding-top: 5px;}
+.admin_info p{color: #eaedf4;font-size: 14px;text-align: center;margin: 3px 0;}
+.admin_val input{width: 90px;}
+#yzm img{width: 120px;height: 40px;}
+.admin_user::before,.admin_pwd::before,.admin_val::before{font-family: 'FontAwesome';position: absolute;top: 0;left: 10px;height: 42px;line-height: 42px;width:25px;text-align: center; font-size: 16px;color: #eaedf4;}
+.admin_user::before{content: "\f007";}
+.admin_pwd::before{content: "\f13e";}
+.admin_val::before{content: "\f11c";}
+
+
+/*网站地图标题修改 Muntime.com*/
+.map-menu ul{margin:4px;width:156px;border:1px solid #eaedf4;}
+.map-menu ul li.title{background:#eaedf4;font-weight:bold;padding-left:5px;color: #fff;}
+.map-menu ul li.title2{font-weight:bold;padding-left:10px;}
+.map-menu ul li{padding:4px;padding-left:20px;}
+
+/*分页修改配色 Muntime.com*/
+#pages {padding:14px 0 10px; text-align:right}
+#pages a { display:inline-block; height:22px; line-height:22px; background:#fff; border:1px solid #e3e3e3; text-align:center; color:#333; padding:0 10px}
+#pages .a1 { width:56px; padding:0 }
+#pages a:hover {background:#f1f1f1; color:#000; text-decoration:none; }
+#pages span {display:inline-block; height:22px;padding:0 10px; line-height:22px; background: #3498db; border:1px solid #3498db; color:#fff; text-align:center; }
+.page .noPage { display:inline-block; height:22px; line-height:22px; border:1px solid #e3e3e3; text-align:center; color:#a4a4a4; }
+
+
+/*图片列表水平左右居中*/
+.img-wrap{border:1px solid #eee;text-align:center;overflow:hidden;background:#fff}
+.img-wrap a{display:table-cell;vertical-align:middle;text-align:center;}
+
+#imgPreview td.on{background:#f4f9fe}
+#imgPreview td.on a{background:url("../images/msg_bg.png") no-repeat right -250px;vertical-align:middle; padding-right:70px;display:inline-block;display:-moz-inline-stack;zoom:1;*display:inline; height:16px; line-height:16px}
+
+/*角色权限设置*/
+.role-memu{ padding:5px 0}
+.role-memu li a{cursor: hand;!important;cursor: pointer;display:block;color:#2e74d7;text-decoration: none; height:24px; padding:0 6px; overflow:hidden; line-height:24px; vertical-align:middle; background-color:#FFF}
+.role-memu li a em{ width:80px; overflow:hidden; display:block}
+.role-memu li a span{float:right; color: #999}
+.role-memu li a span img{ margin-right:2px}
+.role-memu li.on a{ background:#e0e9f0}
+.role-but,.role-but span{background: url(../images/admin_img/tbtn.png) no-repeat; height:36px; line-height:36px; vertical-align:middle; padding-left:12px; border:none;display:inline-block;display:-moz-inline-stack;zoom:1;*display:inline;}
+.role-but span{background-position: right top; padding:0 12px 0 0; font-weight:700; font-size:14px; color:#fff}
+
+
+/*发布内容修改为1280宽屏并修改样式 小于1280为自适应大小*/
+@media screen and (min-width:980px) and (max-width:1279px) {
+	body .addContent{width:100%;}
+
+}
+.addContent{width:1280px; margin:0 auto;position: relative;min-width:980px;overflow: hidden;}
+.addContent:before{content:"";display: block;position: fixed; width: 200%;height:200%;background: #f3f3f3;left: 0px;top: 0px;z-index: -1;}
+.addContent .content{padding:6px; margin-top: 0px;}
+.addContent .crumbs{left: 0px;top:0px;background: #fff;border: 1px solid #f3f3f3;}
+.addContent .crumbs::before{padding-left:83px; margin-right: 5px;}
+.fixed-bottom {height: 60px;}
+.fixed-but{position: fixed;bottom: 0;height: 40px;border-top: 1px solid #f1f1f1;padding: 10px 0;width: 100%;background: #f4f4f4;}
+.fixed-but .button{background: none;padding: 0px;margin:0px; }
+.fixed-but .button .cu{padding: 3px 5px;margin: 0px 8px; border-radius: 2px;box-shadow: 0px 1px 2px rgba(0,0,0,0.1); background: #3498db;color:#fff;font-size: 14px;border: none;cursor: pointer;}
+.fixed-but .button [name="dosubmit_continue"]{background: #0080ba}
+.fixed-but .button [name="close"]{background: #ff6c60}
+.addContent .col-1 {border: 1px solid #f3f3f3;}
+.addContent .col-1 .pad-6 {padding: 6px;overflow: hidden;}
+#RopenClose{width: 10px;}
+.r-close:before,.r-open:before{padding: 250px 3px;float: left;font-size: 16px;color: #dbdbdb;}
+.r-close:before{content: "\f0da";}
+.r-open:before{content: "\f0d9";}
+.addContent .button{background: #0080ba}
+.content_attr{border: 1px solid #CCC;padding: 5px 8px;background: #FFC;margin-top: 6px;}
+
+.addContent .col-auto{margin-top: 40px;overflow: hidden;background: #fff;}
+.addContent .col-right{width:204px; overflow:hidden;margin-top: 40px;background: #fff;}
+.addContent .col-right .content h6{ border-bottom:1px solid #f1f1f1; padding:8px 0 3px; margin-bottom:7px;font-size: 14px;font-weight: bold;}
+.addContent .col-right .content input{max-width:182px}
+.addContent .col-right .content .upload-pic{width:180px;height:180px;text-align:center;overflow:hidden;}
+.addContent .col-right .content .upload-pic a{display:table-cell;vertical-align:middle;width:180px;height:185px;text-align:center;*display:block;*font-size:105px}
+.addContent .col-right .content .upload-pic{ background:#eef2f2; border:1px solid #dce6ea; zoom:1; padding:1px;}
+.addContent .col-right select#template{max-width:188px;*width:188px;_width:188px}
+.addContent a.r-close,.addContent a.r-open { float:right}
+
+.list-dot{ padding-bottom:10px}
+.list-dot li,.list-dot-othors li{padding:5px 0; border-bottom:1px dotted #c6dde0;  color:#bbb; position:relative;_height:22px}
+.list-dot li:hover,.list-dot-othors li:hover{ background-color:#d9e5ee}
+.list-dot li span,.list-dot-othors li span{color:#004499}
+.list-dot li a.close span,.list-dot-othors li a.close span{display:none}
+.list-dot li a.close,.list-dot-othors li a.close{background: url(../images/cross.png) no-repeat left 3px; display:block; width:16px; height:16px;position: absolute;outline:none;right:5px; bottom:5px}
+.list-dot li a.close:hover,.list-dot-othors li a.close:hover{background-position: left -46px}
+.list-dot-othors li{float:left;width:24%;overflow:hidden;}
+
+/*评论*/
+/*.comment{ padding:8px 10px}*/
+.comment .title{ margin-bottom:5px}
+.comment .title span{ position:relative; top:-5px}
+.comment .content{ font-size:14px; background:#f6f9fb; border:1px solid #c4d5df; zoom:1; padding:8px 10px; margin:5px 0}
+.comment .content span{display:block;}
+.comment_button{margin-bottom:15px;}
+.comment_button a{padding:5px; border:solid 1px #C3D4E7; }
+.comment_button a.on{background:#4C7FB6; color:#fff;border:solid 1px #3E73A9}
+
+/*圆角*/
+.fillet{position:relative; border:1px solid #c4d5df; zoom:1;}
+.fillet span.o1,
+	.fillet span.o2,
+	.fillet span.o3,
+	.fillet span.o4{position:absolute;width:3px;height:3px; font-size:1px;background: url(../images/fillet.png) no-repeat}
+	.fillet span.o1{background-position: left -6px; top:-1px; left:-1px}
+	.fillet span.o2{background-position: right -6px; top:-1px; right:-1px}
+	.fillet span.o3{background-position: left bottom; bottom:-1px; left:-1px}
+	.fillet span.o4{background-position: right bottom; bottom:-1px; right:-1px;}
+	
+/*工作流*/
+.workflow{padding:10px 140px 10px 10px;}
+.workflow .col{padding-bottom:20px;background: url(../images/admin_img/arrowhead-y.png) no-repeat 10px bottom;}
+.workflow div.off{padding:0; background:none}
+.workflow .content{left:130px; position:relative;}
+.workflow .title{position:absolute; left:-130px; top:-1px; width:90px; font-size:14px; font-weight:700; text-align:center; padding: 0 0 3px 0; background:#fff}
+.workflow .title span.line{border-bottom:1px solid #95b9cf; width:32px; height:1px; font-size:1px; position:absolute; right:-37px; top:17px}
+.workflow .fillet{background:#f6f9fb; padding:8px 10px 7px}
+.workflow .name{font-size:14px}
+
+
+/*附件 未使用-已使用*/
+.tab-use{ position: relative}
+.tab-use .arrows{background: url(../images/admin_img/toggle-collapse-dark.png) no-repeat;  width:16px; height:16px; overflow:hidden; position:absolute; left:0; top:-11px;}
+.tab-use ul{ position:absolute; display:none; top:5px; left:0; width:80px}
+.tab-use ul li{}
+.tab-use ul a{width:auto;padding:3px 8px}
+
+.col_main{*zoom:1;*width:auto;*height:auto}
+.col_main{display:table-cell;vertical-align:top;word-wrap:break-word;word-break:break-all}
+.main_bd{padding:0 30px 40px}
+.account_setting_area{border:1px solid #e7e7eb;margin-top:40px}
+.account_setting_area .sub_title{height:40px;line-height:40px;border-bottom:1px solid #e7e7eb;padding:0 20px;font-size:14px;font-weight:400;font-style:normal;background-color:#f4f5f9}
+.account_setting_item{*zoom:1;border-top:1px solid #e7e7eb;padding:18px 20px}
+.account_setting_item:after{content:"\200B";display:block;height:0;clear:both}
+.account_setting_item:first-child{border-top-width:0}
+.account_setting_item.no_extra{border-bottom-width:0}
+.account_setting_item:hover{background-color:#fff}
+.account_setting_item h4{float:left;width:100px;margin-right:20px;font-weight:400;font-style:normal;color:#8d8d8d}
+.account_setting_item.wrp_pic_item_spe1{padding-bottom:0;padding-top:5px}
+.account_setting_item.wrp_pic_item_spe2{padding-bottom:5px;padding-top:10px}
+.account_setting_item .meta_opr{float:right;margin-left:16px;word-wrap:break-word;word-break:break-all;text-align:right;color:#8d8d8d}
+.account_setting_item .meta_opr .btn{display:block;margin-left:auto;margin-right:auto;font-size:14px;text-align:center;text-decoration:none;overflow:visible;height:32px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;line-height:32px;-webkit-tap-highlight-color:rgba(255,255,255,0);color:#fff;background-color:#d1d1d1;background-image:-moz-linear-gradient(top,#fff 0,#fff 100%);background-image:-o-linear-gradient(top,#fff 0,#fff 100%);background-color:#fff;background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#fff));background-image:-webkit-linear-gradient(top,#fff 0,#fff 100%);background-image:linear-gradient(to bottom,#fff 0,#fff 100%);border-color:#e7e7eb;color:#222;height:30px;line-height:30px;*line-height:28px;width:auto;padding-left:14px;padding-right:14px}
+.account_setting_item .meta_opr .btn:active{color:rgba(255,255,255,0.4);background-color:#a7a7a7}.account_setting_item .meta_opr .btn button{color:#222}.account_setting_item .meta_opr .btn:hover{background-image:-moz-linear-gradient(top,#e7e7eb 0,#e7e7eb 100%);background-image:-o-linear-gradient(top,#e7e7eb 0,#e7e7eb 100%);background-color:#e7e7eb;background-image:-webkit-gradient(linear,0 0,0 100%,from(#e7e7eb),to(#e7e7eb));background-image:-webkit-linear-gradient(top,#e7e7eb 0,#e7e7eb 100%);background-image:linear-gradient(to bottom,#e7e7eb 0,#e7e7eb 100%);border-color:#dadbe0;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;color:#000}
+.account_setting_item .meta_opr .btn:hover button{color:#222}
+.account_setting_item .meta_opr a{margin-left:14px}.account_setting_item .meta_opr .meta_extra{float:left;text-align:center;width:110px;margin-left:15px}
+.account_setting_item .meta_opr .meta_extra .meta_pic{width:80px;height:80px;background:transparent url(/mpres/htmledition/images/icon/page-setting/avatar/icon_avatar_default218877.png) no-repeat 0 0;vertical-align:middle}
+.account_setting_item .meta_opr .meta_extra a{margin-left:0;display:block;text-align:center}
+.account_setting_item .meta_opr .meta_extra.more_qrcode a.more_size{margin-top:-5px}
+.account_setting_item .meta_opr .meta_extra.more_qrcode .meta_pic{width:90px;height:90px;margin-top:-5px}
+.account_setting_item .meta_content{display:table-cell;vertical-align:top;float:none;width:auto;*display:block;*zoom:1;word-wrap:break-word;word-break:break-all}
+.account_setting_item .meta_content:after{content:" . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";visibility:hidden;clear:both;height:0!important;display:block;line-height:0}
+.account_setting_item .meta_content .avatar{width:80px;height:80px;background:transparent url(/mpres/htmledition/images/icon/page-setting/avatar/icon_avatar_default218877.png) no-repeat 0 0}
+.account_setting_item .meta_content .dropdown_menu{margin-right:16px;vertical-align:top}
+.account_setting_item .meta_content .icon_verify_checked{margin-top:-3px;margin-left:3px}
+.account_setting_item .meta_content .tips{color:#8d8d8d}
+.account_setting_item .meta_content .meta_preview{margin-top:6px}
+.account_setting_item .meta_content .meta_preview img{width:224px;height:149px}
+.account_setting_item .meta_content .meta_preview p{color:#a3a3a3;margin-top:-6px;padding-left:88px}
+.account_setting_item .meta_content .meta_pic{width:80px;height:80px}
+.account_setting_item .meta_content .qrcode_pic{width:94px;height:94px;margin-left:-7px}

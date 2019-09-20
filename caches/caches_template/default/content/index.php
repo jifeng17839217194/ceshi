@@ -1,0 +1,291 @@
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>蜂博士</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      font-family: 'Source Han Sans CN';
+      min-width: 1280px;
+      margin:0 auto;
+    }
+    .clearfix::after,.clearfix::before{
+      display: table;
+      content: ' ';
+      overflow: hidden;
+    }
+    .clearfix::after{
+      clear: both;
+    }
+    .container{
+    	 min-width: 1280px;
+      margin:0 auto;
+    }
+.icon-img{
+  display: block;
+  margin:10px auto;
+}
+.nav-box{
+  background: url(<?php echo IMG_PATH;?>pcimages/05.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+}  
+.nav-box .mid-nav{
+  width: 1280px;
+  margin: 0 auto;
+  min-width: 1280px;
+}
+.nav-box .mid-nav .text-box{
+  float: left;
+  margin: 110px 95px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.mid-nav .text-box .h4{
+  font-size: 40px;
+  line-height: 44px;
+}
+.mid-nav .text-box .h1{
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.mid-nav .text-box .h6{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.sao{
+  font-family: '微软雅黑';
+  font-weight: 200;
+  font-size: 16px;
+  text-align: center;
+  width: 160px;
+  color: #ffffff;
+}
+.img-box{
+  float: left;
+  position: relative;
+}
+.second-img{
+  margin-top: 121px;
+}
+.phone{
+  position: absolute;
+  left: 268px;
+  top: 48px;
+}
+.list li.mid1,.list li.mid3{
+  background: #ffffff;
+}
+.list li.mid2,.list li.mid4{
+  background: #fffbee;
+}
+.list li .mid-box{
+  height: 600px;
+  width: 1280px;
+  margin: 0 auto;
+  min-width: 1280px;
+}
+.mid1 .mid-box{
+  background: url(<?php echo IMG_PATH;?>pcimages/31.png) no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+.mid2 .mid-box{
+  background: url(<?php echo IMG_PATH;?>pcimages/33.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.mid3 .mid-box{
+  background: url(<?php echo IMG_PATH;?>pcimages/35.png) no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+.mid4 .mid-box{
+  background: url(<?php echo IMG_PATH;?>pcimages/37.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.list li .mid-box img,.list li .mid-box .text{
+  float: left;
+}
+.mid1 .mid-box img,.mid3 .mid-box img{
+  margin-top: 90px;
+  margin-left: 77px;
+  margin-right: 100px;
+}
+.mid3 .mid-box img{
+  margin-right: 120px;
+}
+.mid1 .mid-box .text,.mid3 .mid-box .text{
+  margin-top: 230px;
+  font-weight: 400;
+}
+.mid1 .mid-box .text .h5,.mid3 .mid-box .text .h5{
+  font-size: 55px;
+  color: #333333;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+.mid1 .mid-box .text .h6,.mid3 .mid-box .text .h6{
+  font-size: 32px;
+  color: #333333;
+}
+.mid2 .mid-box img,.mid4 .mid-box img{
+  margin-top: 100px;
+}
+.mid2 .mid-box .text,.mid4 .mid-box .text{
+  margin: 230px 140px 0;
+  font-weight: 400;
+}
+.mid2 .mid-box .text .h5,.mid4 .mid-box .text .h5{
+  font-size: 55px;
+  color: #333333;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+.mid2 .mid-box .text .h6,.mid4 .mid-box .text .h6{
+  font-size: 32px;
+  color: #333333;
+}
+.footer{
+  width: 100%;
+  height: 150px;
+  background: #542000;
+  color: #fff;
+  overflow: hidden;
+  padding-top: 15px;
+}
+.footer .mid-box{
+  width: 1280px;
+  margin:0 auto;
+  min-width: 1280px;
+}
+.footer .mid-box > div{
+  width: 50%;
+  float: left;
+  height: 120px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.footer .mid-box .left{
+  font-size: 14px;
+  border-right: 1px solid #ffffff;
+  padding-top: 20px;
+  line-height: 1;
+}
+.footer .mid-box .left p{
+  margin-bottom: 15px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+.footer .mid-box .left p span{
+  margin-left: 20px;
+}
+
+.footer .mid-box .right p,.footer .mid-box .right img{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 13px;
+}
+.footer .mid-box .right p{
+  text-align: left;
+  margin-left: 27px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="<?php echo IMG_PATH;?>pcimages/06.png" alt="蜂博士APP——logo" class="icon-img">
+    <div class="nav-box">
+      <div class="mid-nav clearfix">
+        <div class="text-box">
+          <p class="h4">蜂农在线专业服务平台</p>
+          <p class="h1">蜂博士APP</p>
+          <p class="h6">随时随地学习养蜂技术，养蜂专家就在您的身边。</p>
+          <p class="h6">养蜂技术教育、专家答疑、网络商城以及蜂农有关的服务。</h6>
+        </div>
+        <div class="img-box">
+          <div>
+          <img src="<?php echo IMG_PATH;?>pcimages/09.png" alt="蜂博士APP二维码" class="second-img">
+          <p class="sao">扫一扫，下载蜂博士<br/>ios & Android</p>
+          </div>
+          <img src="<?php echo IMG_PATH;?>pcimages/03.png" alt="蜂博士APP手机展示图" class="phone">
+        </div>
+      </div>
+    </div>
+    <ul class="list">
+      <li class="mid1">
+        <div class="mid-box clearfix">
+            <img src="<?php echo IMG_PATH;?>pcimages/11.png" alt="">
+          <div class="text">
+            <p class="h5">你问我答</p>
+            <p class="h6">你的疑惑，我来解答</p>
+            <p class="h6">你的疑虑，我来解开</p>
+          </div>
+        </div>
+      </li>
+      <li class="mid2">
+        <div class="mid-box clearfix">
+          <div class="text">
+            <p class="h5">蜂讯动态</p>
+            <p class="h6">最新动态，滚动更新</p>
+            <p class="h6">随时随地，了解最新</p>
+          </div>
+          <img src="<?php echo IMG_PATH;?>pcimages/13.png" alt="">
+        </div>
+      </li>
+      <li class="mid3">
+        <div class="mid-box clearfix">
+          <img src="<?php echo IMG_PATH;?>pcimages/15.png" alt="">
+          <div class="text">
+            <p class="h5">干货共享</h5>
+            <p class="h6">优质干货，每日更新</p>
+            <p class="h6">多重载体，轻松学习</p>
+          </div>
+        </div>
+      </li>
+      <li class="mid4">
+        <div class="mid-box clearfix">
+          <div class="text">
+            <p class="h5">专家云集</h5>
+            <p class="h6">各路专家，定期上线</p>
+            <p class="h6">经验资深，专业解答</p>
+          </div>
+          <img src="<?php echo IMG_PATH;?>pcimages/17.png" alt="">
+        </div>
+      </li>
+    </ul>
+    <div class="footer">
+      <div class="mid-box clearfix">
+        <div class="left">
+          <p>联系电话：0571-69963388<span>4008 87 1688</span></p>
+          <p>客服邮箱：service@smartbeemap.com</p>
+          <p>Copyright ©2018 智蜂麦谱 版权所有</p>
+        </div>
+        <div class="right">
+          <img src="<?php echo IMG_PATH;?>pcimages/22.png" alt="蜂博士APP二维码">
+          <p>微信扫一扫<br/>关注问问蜂博士公众号</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
